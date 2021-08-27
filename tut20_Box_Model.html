@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            background-color: #c6ffde40;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: #b8b3ec78;
+            border: 3px solid rgb(64, 66, 119);
+
+            /*we can set padding top bottom left or right like this*/
+            /* padding-top: 19px;
+            padding-left: 19px;
+            padding-bottom: 19px;
+            padding-right: 29px; */
+
+            /* margin-top: 5px;
+            margin-left: 6px;
+            margin-right: 8px;
+            margin-bottom: 5px;
+             */
+
+            /* padding: top right bottom left;
+            padding: 23px 51px 45px 80px; */
+
+            /* padding: y(top/bottom) x(left/right); */
+            /* margin: y(top/bottom) x(left/right); */
+            padding: 36px 45px;
+            margin: 40px 80px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut, ullam aperiam quaerat inventore nobis, at ipsa numquam quo ducimus nisi adipisci atque vel fugit dolorum enim eaque facilis illum sunt consequatur nemo similique. Obcaecati tempora alias excepturi velit saepe asperiores itaque corrupti.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut, ullam aperiam quaerat inventore nobis, at ipsa numquam quo ducimus nisi adipisci atque vel fugit dolorum enim eaque facilis illum sunt consequatur nemo similique. Obcaecati tempora alias excepturi velit saepe asperiores itaque corrupti.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut, ullam aperiam quaerat inventore nobis, at ipsa numquam quo ducimus nisi adipisci atque vel fugit dolorum enim eaque facilis illum sunt consequatur nemo similique. Obcaecati tempora alias excepturi velit saepe asperiores itaque corrupti.</p>
+    </div>
+</body>
+</html>

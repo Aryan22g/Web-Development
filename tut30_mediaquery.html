@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .box{
+        font-size: 72px;
+        text-align: center;
+        background-color: red;
+        color: white;
+        display: none;
+    }
+    @media only screen and (max-width:500px) and (min-width: 300px){
+        #box-1{
+            display: block;
+            background-color:purple;
+        }
+    }
+    @media (min-width: 500px) and (max-width:800px){
+        #box-2{
+            display: block;
+            background-color: cyan;
+        }
+    }
+    @media (min-width: 800px){
+        #box-4{
+            display: block;
+            background-color: red    ;
+        }
+    }
+    /*More to learn: media types in css*/
+</style>
+<body>
+    <div class="box" id="box-1">Main ek iphone hun</div>
+    <div class="box" id="box-2">Main ek tablet hu</div>
+    <div class="box" id="box-3">main ek moile hu</div>
+    <div class="box" id="box-4">main ek widescreen computer hu</div>
+    
+</body>
+</html>

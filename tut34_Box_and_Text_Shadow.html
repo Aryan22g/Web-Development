@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: #deb887;
+            /* box-shadow: offset-x offset-y blurr radius spread radius color; */
+            /* box-shadow: -10px 13px green; */
+            /* box-shadow: -7px 5px 30px green; */
+            /* box-shadow: -7px 5px 10px 14px green; */
+            box-shadow: -7px 5px 10px 14px rgba(38, 233, 233, 0.05);
+            /* box-shadow: inset offset-x offset-y blurr radius spread radius color; */
+            box-shadow: inset 2px 2px 10px 14px rgba(142, 233, 38, 5);
+        }
+        .card h2{
+            text-shadow: 3px 4px 2px  brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is HTML course</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste fugit eaque soluta. Nam quod illo vel nobis. Sapiente, voluptates adipisci atque numquam eligendi, possimus officia minus, amet similique neque odit quis consequuntur eaque explicabo!x
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>CSS Course</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste fugit eaque soluta. Nam quod illo vel nobis. Sapiente, voluptates adipisci atque numquam eligendi, possimus officia minus, amet similique neque odit quis consequuntur eaque explicabo!x
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Javascript course</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste fugit eaque soluta. Nam quod illo vel nobis. Sapiente, voluptates adipisci atque numquam eligendi, possimus officia minus, amet similique neque odit quis consequuntur eaque explicabo!x
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

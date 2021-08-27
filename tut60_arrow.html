@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This si arrow function tutorial.
+    </div>
+    <script>
+        //Normal function
+        // function greet() {
+        //     console.log('Good Morning');
+        // }
+        
+        //Arrow Function
+        // let greet = ()=>{
+        //     console.log("Good Morning");
+        // }
+        
+        let greet = ()=> console.log("Good Morning");
+
+        // let sum = (a,b)=>{
+        //     return a+b;
+        // }
+        let sum = (a,b) => a+b;
+        let half = a => a/2;
+        //mainly used
+        setTimeout(() => {
+            console.log("We are inside Timeout");
+        }, 3000);
+        
+        greet();
+
+        let obj1={
+            greeting: "Good Morning",
+            names:["Harry", "Rohan","SkillF","Khiladi"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + " kukdoo ku "+ student);
+                    //this.greeting defined under arrow function will point to parent function but it will not point to parent function if it was defined in a normal function.
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>
